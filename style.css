@@ -1,0 +1,64 @@
+body{
+    background-color: blue;
+    margin: 20px;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.grid-wrapper {
+    display: grid;
+    gap: 20px;
+    height: 90vh;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.overlap{
+    grid-column: span 2;
+}
+
+.box{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+}
+
+.filler1-box,
+.filler2-box{
+    background-color: white;
+}
+
+.masonry1{
+    grid-row: span 2;
+}
+
+.explicitly-placed{
+    grid-row: span 2;
+}
+
+.masonry2{
+    grid-row: span 2;
+}
+
+.named-tracks{
+    grid-column: span 2;
+}
+
+.container h1{
+    color: white;
+}
